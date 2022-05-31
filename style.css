@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 20px;
+    background-color: rgb(0, 165, 221);
+}
+
+main{
+    position: absolute;
+    width: 500px;
+    min-height: 300px;
+    background-color: white;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.box-circle{
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.box-circle svg{
+    width: 150px;
+    height: 150px;
+}
+
+circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke: black;
+    transform: translate(5px, 5px);
+    stroke-width: 10px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+circle:nth-child(1){
+    stroke: rgb(194, 194, 194);
+    stroke-dashoffset: 0;
+}
+
+circle:nth-child(2){
+    stroke: rgb(3, 255, 3);
+    stroke-dashoffset: 0;
+}
+
+.contador{
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    margin: 10px;
+    position: relative;
+    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.375);
+    border-radius: 3px;
+}
+
+h3{
+    padding: 10px;
+}
+
+.resposta{
+    position: relative;
+    margin: 10px;
+}
+
+.resposta p{
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.resposta p:hover{
+    background-color: rgb(213, 209, 209);
+}
+
+#botões{
+    padding: 5px;
+}
+
+button{
+    width: 60px;
+    position: relative;
+    cursor: pointer;
+}
