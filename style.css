@@ -21,6 +21,12 @@ main{
     border-radius: 10px;
 }
 
+@media(max-width: 550px){
+    main{
+        width: 200px;
+    }
+}
+
 .box-circle{
     position: relative;
     width: 100%;
